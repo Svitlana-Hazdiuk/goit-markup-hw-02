@@ -4,6 +4,8 @@
   --black-text: #000000;
 
   --grey-text: #757575;
+  --pale-background: #f5f4fa;
+  --dark-background: #2f303a;
 
   --white-text: #ffffff;
   --white-text-op60: rgba(255, 255, 255, 0.6);
@@ -27,6 +29,7 @@ body {
 .logo {
   font-family: 'Raleway', sans-serif;
   font-size: 26px;
+  font-weight: 700;
   line-height: 1.19;
   text-decoration: none;
   letter-spacing: 0.03em;
@@ -78,12 +81,12 @@ body {
 
 .auth-nav .link:hover,
 .auth-nav .link:focus {
-  color: var(--blue-text);
+  color: var(--blue-color);
 }
 
 /* Hero */
 .hero {
-  background-color: #2f303a;
+  background-color: var(--dark-background);
 }
 
 .hero-title {
@@ -101,7 +104,7 @@ body {
   background-color: var(--blue-color);
   color: var(--white-text);
 
-  font-weight: bold;
+  font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
   align-items: center;
@@ -114,7 +117,7 @@ body {
 .advant-title {
   color: var(--graphite-dark);
 
-  font-weight: bold;
+  font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
@@ -123,22 +126,27 @@ body {
 
 .advant-description {
   font-size: 14px;
+  font-weight: 400;
   line-height: 1.71;
   letter-spacing: 0.03em;
 }
 
 .directions-title {
   color: var(--graphite-dark);
-  font-weight: bold;
+  font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
   letter-spacing: 0.03em;
 }
 
+.team {
+  background-color: var(--pale-background);
+}
+
 .team-title {
   color: var(--graphite-dark);
-  font-weight: bold;
+  font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
@@ -155,13 +163,14 @@ body {
 }
 
 .position {
+  font-weight: 400;
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
 }
 
 .button-filter {
-  background-color: #f5f4fa;
+  background-color: var(--pale-background);
   color: var(--graphite-dark);
 
   font-weight: 500;
@@ -180,35 +189,39 @@ body {
 .examples-title {
   color: var(--graphite-dark);
 
-  font-weight: bold;
+  font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
 }
 
 .examples-type {
+  font-weight: 400;
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.03em;
 }
 
-.footer {
-  background-color: #2f303a;
+.footer-block {
+  background-color: var(--dark-background);
 }
 
 .address-block {
   font-style: normal;
+  font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
 }
 
-.address-color {
+.address-footer {
   color: var(--white-text);
+  text-decoration: none;
 }
 
-.contacts-color {
+.contacts-footer {
   color: var(--white-text-op60);
+  text-decoration: none;
 }
 
 .visually-hidden {
